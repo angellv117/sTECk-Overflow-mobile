@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">sTEC Overflow</string>
+    <string name="log_in">Log In</string>
+    <string name="sing_up">Sing Up</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">702320497993206</string>
+    <string name="fb_login_protocol_scheme">fb702320497993206</string>
+    <string name="facebook_client_token">64b6aae64ad1d1fa81d30da30435f848</string>
+    <string name="title_activity_index">Index</string>
+    <string name="tab_Feed">Su Feed</string>
+    <string name="tab_Preguntas">Sus Preguntas</string>
+    <string name="tab_Respuestas">Su Preguntas</string>
+    <string name="title_activity_no_usar">NoUsar</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="prefs_file">com.examle.proyectoTI</string>
+    <string name="steck_oveflow">sTeck Oveflow</string>
+</resources>

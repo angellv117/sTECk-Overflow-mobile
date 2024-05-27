@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".A_SusPreguntas_Ver"
+    android:background="#717171"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bkappbar"
+        android:forceHasOverlappingRendering="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bkappbar"
+            android:gravity="center_vertical"
+            android:minHeight="?actionBarSize"
+            android:paddingLeft="5dp"
+            android:text="Edite su pregunta"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:textColor="@color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        tools:ignore="MissingConstraints">>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#9C9C9C"
+            app:cardCornerRadius="25dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/imagen"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/circulo" />
+
+                    <EditText
+                        android:id="@+id/tituloSResp_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="15"
+                        android:text="¿Pregunta x ?"
+                        android:textColor="@color/white"
+                        android:textSize="28dp"
+                        android:textStyle="bold|italic"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="15"
+                        app:counterTextColor="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/ncomtrolSResp_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:background="@drawable/shape_fecha_ncontrol"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="20dp"
+                            android:text="Pregunta: 20590059"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold|italic" />
+
+                        <Space
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/fechaSResp_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:background="@drawable/shape_fecha_ncontrol"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="El día: 12/12/2023"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold|italic" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/cuerpoSResp_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="150"
+                        android:paddingRight="10dp"
+                        android:text="Cuerpo de la pregunta"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold|italic"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="150"
+                        app:counterTextColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BEditar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="25dp"
+                android:backgroundTint="@color/pickColor"
+                android:elevation="15dp"
+                android:gravity="center"
+                android:text="Guardar"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                app:cornerRadius="25dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

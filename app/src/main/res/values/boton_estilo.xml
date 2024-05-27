@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Bonon4">
+        <item name="cornerSize">20%</item>
+    </style>
+    <style name="Bonon5">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="Bonon6">
+        <item name="cornerRadius">25dp</item>
+    </style>
+    <style name="CustomTabStyle" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">10sp</item>
+</style>
+
+
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pickColor"
+        app:cardBackgroundColor="@color/pickColor"
+        app:cardCornerRadius="25dp"
+        app:cardUseCompatPadding="true"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/foto_resp"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                app:srcCompat="@drawable/foto"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/cuerpo_resp"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:textSize="15dp"
+                    android:text="hola"
+                    android:textColor="@color/white"
+                     />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/fecha_resp"
+                            android:layout_width="82dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/shape_fecha_ncontrol"
+                            android:gravity="center"
+                            android:textSize="12dp"
+                            tools:text="22/12/2023 202555555654"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/nc_resp"
+                            android:layout_width="85dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/shape_fecha_ncontrol"
+                            android:gravity="center"
+                            android:layout_marginEnd="8dp"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            tools:text="20590059" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
